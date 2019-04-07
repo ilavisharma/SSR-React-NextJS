@@ -17,18 +17,22 @@ class Posts extends React.Component {
       );
     } else {
       return (
-        <div className="list-group">
-          {this.state.posts.map(post => (
-            <a
-              key={post.id}
-              href="#"
-              className="list-group-item list-group-item-action flex-column align-items-start"
-            >
-              <div className="d-flex w-100 justify-content-between">
-                <h5 className="mb-1">{post.title}</h5>
-              </div>
-            </a>
-          ))}
+        <div>
+          <p>These are the {this.state.posts.length} posts available</p>
+
+          <div className="list-group">
+            {this.state.posts.map(post => (
+              <a
+                key={post.id}
+                href="#"
+                className="list-group-item list-group-item-action flex-column align-items-start"
+              >
+                <div className="d-flex w-100 justify-content-between">
+                  <h5 className="mb-1">{post.title}</h5>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       );
     }
