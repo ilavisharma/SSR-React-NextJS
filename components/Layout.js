@@ -10,7 +10,10 @@ export default props => {
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         />
       </Head>
-      <div className="container">{props.children}</div>
+      <div className="container">
+        <h1 className="display-4 text-center">Json Placeholder Data</h1>
+        {props.children}
+      </div>
     </div>
   );
 };
