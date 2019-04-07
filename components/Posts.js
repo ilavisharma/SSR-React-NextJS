@@ -10,15 +10,12 @@ class Posts extends React.Component {
 
   render() {
     if (this.state.posts === null) {
-      console.log('in the IF part');
-
       return (
         <div className="spinner-border" role="status">
           <span className="sr-only">Loading...</span>
         </div>
       );
     } else {
-      console.log('in the ELSE part');
       return (
         <div className="list-group">
           {this.state.posts.map(post => (
