@@ -1,9 +1,10 @@
 {
-  "name": "create-next-example-app",
+  "name": "ssr-react",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "heroku-postbuild": "yarn run build"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
