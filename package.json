@@ -4,7 +4,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start -p $PORT",
-    "heroku-postbuild": "yarn run build"
+    "now-build": "next build"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
